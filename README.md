@@ -1,68 +1,66 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![](https://fontmeme.com/permalink/190707/fd4735271a0d997cbe19a04408c896fc.png)
 
-## Available Scripts
+## To start this app
 
-In the project directory, you can run:
+To start this app, you will need to run 2 separate commands.
+
+### `npm db`
+
+This will start the database so your app actually has movies to query.<br>
+The database runs on port 3001 just in case you need that info.
 
 ### `npm start`
 
-Runs the app in the development mode.<br>
+This starts up the actual app in the development mode.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
 
-### `npm test`
+# Requirements
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The app is provided to you in a static state, but it needs to be changed to a fully dynamic React app. It has variety of functionality. You can see most of the functionality displayed in this [short video](https://www.youtube.com/watch?v=ePt2lqrBljA&feature=youtu.be)
 
-### `npm run build`
+## Main Page
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Located at `/`, this page has the following functionality:
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+- movies are grouped by genre.
+- a maximum of 5 movies are shown below each genre heading.
+- genre headings only show up if there are movies that belong to that genre.
+- movies can belong to 1 or more genres and show up multiple times on the page.
+- genres are displayed in alphabetical order.
+- all the genres, with movies are displayed.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Search
 
-### `npm run eject`
+Located on all pages, search has the following functionality:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- The search will apply to any of the pages the user is currenty visiting.
+- search filters the results down based on the input provided
+- the results are filtered based on the finding matching text either within the `title` or the `overview`
+- the amount of results found are displayed below the search field
+- the search query used are displayed below the search field
+- don't worry about the filter *NOT* working on backspace
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Browse
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Located at `/browse`, this page has the following functionality:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- Users can see all 100 movies
+- Movies are not sorted by genres
 
-## Learn More
+## My List
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Located at `/my-list`, this page has the following functionality:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Users can see all the movies that have been added to their list
+- Movies are not sorted by genres
 
-### Code Splitting
+## Adding to My List
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+Located on all pages, adding to my list has the following functionality:
 
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+- Users can hover over a movie and see a `+` sign. Clicking on this button will add a movie to their list.
+- Once a movie is added to the users list, it will show up under the `my-list` section
+- This update must be made in a way so that the information persists even if the browser is reloaded.
+- If a movie is added to the users list, it must include a red checkmark.
+- Clicking on a movies checkmark that is already on their list will remove it.
