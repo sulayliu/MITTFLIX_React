@@ -4,12 +4,12 @@
 
 To start this app, you will need to run 2 separate commands.
 
-### `npm db`
+### `npm run db`
 
 This will start the database so your app actually has movies to query.<br>
 The database runs on port 3001 just in case you need that info.
 
-### `npm start`
+### `npm run start`
 
 This starts up the actual app in the development mode.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
