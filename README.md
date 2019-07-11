@@ -17,7 +17,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 # Requirements
 
-The app is provided to you in a static state, but it needs to be changed to a fully dynamic React app. It has variety of functionality. You can see most of the functionality displayed in this [short video](https://www.youtube.com/watch?v=ePt2lqrBljA&feature=youtu.be)
+The app is provided to you in a static state, but it needs to be changed to a fully dynamic React app. It has variety of functionality. You can see all the functionality displayed at this sample version of the app hosted here: [https://mittflix.firebaseapp.com/](https://mittflix.firebaseapp.com/);
 
 ## Main Page
 
