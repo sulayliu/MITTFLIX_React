@@ -8,7 +8,7 @@ All the HTML and CSS is already included in `App.js` and `index.css` files. You'
 
 To start this app, you will need to run 2 separate commands.
 
-### `npm db`
+### `npm run db`
 
 This will start the database so your app actually has movies to query.<br>
 The database runs on port `3001` just in case you need that info.
