@@ -16,7 +16,7 @@ class Header extends React.Component {
 
     // When click on the different link, the search results display differently.
     let movies;
-    if (linkstring == 'myList') {
+    if (linkstring === 'myList') {
        movies = this.props.movies.filter(movieEle => movieEle.my_list);
     } else {
        movies = this.props.movies;

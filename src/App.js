@@ -18,7 +18,7 @@ class App extends React.Component {
   };
 
   searchMovies = query => {
-    if (query ==='') {
+    if (query === '') {
 
       // When the query value is empty, the movies are updated according to the database.
       MovieAPI.getAll().then(movies => this.setState({movies}));
