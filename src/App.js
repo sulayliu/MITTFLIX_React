@@ -8,36 +8,59 @@ class App extends React.Component {
   state = {
     movies: [],
     genres: [],
+    query: "",
   };
 
   componentDidMount = () => {
+
+    // Get all movies from db.
     MovieAPI.getAll().then(movies => this.setState({movies}));
+    
+    // Get genres from db, and sort in alphabetical order.
     MovieAPI.genres().then(result => 
       this.setState({genres: result.sort((a, b) =>  a.name.localeCompare(b.name))})
       );
   };
 
-  searchMovies = query => {
-    if (query === '') {
+  queryValue = query => {
+    this.setState({query})
+  };
 
-      // When the query value is empty, the movies are updated according to the database.
-      MovieAPI.getAll().then(movies => this.setState({movies}));
+  searchMovies = query => {
+    if (query === "") {
+
+      // When the query value is empty, search movies equal all movies.
+      return this.state.movies;
     } else {
 
-      // Get the movies from database with the query string, and update the state, 
-      // sothat when click backspace the movies can be also updated. 
-      MovieAPI.getAll().then(movies => this.setState({movies: movies.filter(movieEle => (
-        movieEle.title.toLocaleLowerCase().includes(query.toLocaleLowerCase()) ||
-        movieEle.overview.toLocaleLowerCase().includes(query.toLocaleLowerCase())
-      ))}));
+      // Filter the movies according to the query string.
+      return this.state.movies.filter(movie => (
+        movie.title.toLocaleLowerCase().includes(query.toLocaleLowerCase()) ||
+        movie.overview.toLocaleLowerCase().includes(query.toLocaleLowerCase())
+      ));
     }
   };
 
-  // Filter the movies by genre.
-  filterMovies = id => {
-    return this.state.movies.filter(movie => movie.genre_ids.includes(id));
+  // Classify the movies by genres.
+  buildMovieGenreObject = (movies, genres) => {
+    const movieGenres = {}  
+  
+    genres.forEach(genre => {
+      movies.forEach(movie => {
+        if (movie.genre_ids.includes(genre.id)) {
+          if(movieGenres[genre.name] === undefined) {
+            movieGenres[genre.name] = [movie];
+          } else {
+            movieGenres[genre.name].push(movie);
+          }
+        }
+      })
+    });
+  
+    return movieGenres;
   };
 
+  // Toggle to myList.
   listToggle = movie => {
 
     // Update the database according to my_list.
@@ -55,17 +78,21 @@ class App extends React.Component {
   };
 
   render = () => {
+    const movies = this.searchMovies(this.state.query);
+    const moviesByGenres = this.buildMovieGenreObject(movies, this.state.genres);
+    const genres = Object.keys(moviesByGenres);
+
     return (
       <>
-        <Header movies={this.state.movies} searchMovies={this.searchMovies}/>
+        <Header movies={movies} queryValue={this.queryValue}/>
         <Switch>
           <Route exact path="/myList">
-            <Genre genre={"My List"} listToggle={this.listToggle} movies={this.state.movies.filter(movieEle => movieEle.my_list)}/>
+            <Genre genre={"My List"} listToggle={this.listToggle} movies={movies.filter(movieEle => movieEle.my_list)}/>
           </Route>
           <Route exact path="/">
-            {this.state.genres.map(genre => this.filterMovies(genre.id).length > 0 ? 
-              <Genre key={genre.id} listToggle={this.listToggle} genre={genre.name} movies={this.filterMovies(genre.id)}/>
-              : "")}
+            {genres.map(genre =>  
+              <Genre key={genre} listToggle={this.listToggle} genre={genre} movies={moviesByGenres[genre]}/>
+            )}
           </Route>
         </Switch>
 

@@ -9,23 +9,22 @@ class Header extends React.Component {
 
   updateQuery = e => {
     this.setState({query: e.target.value});
-    this.props.searchMovies(e.target.value);
-  };
-
-  displaySearchResults = linkstring => {
-
-    // When click on the different link, the search results display differently.
-    let movies;
-    if (linkstring === 'myList') {
-       movies = this.props.movies.filter(movieEle => movieEle.my_list);
-    } else {
-       movies = this.props.movies;
-    }
-    return this.state.query !== '' ?  `Found ${movies.length} movies with the query "${this.state.query}"` : "";
+    this.props.queryValue(e.target.value);
   };
 
   setLink = link => {
     this.setState({link});
+  };
+  
+  // When click on the different link, the search results display differently.
+  displaySearchResults = linkstring => {
+    let movies;
+    if (linkstring === 'myList') {
+       movies = this.props.movies.filter(movie => movie.my_list);
+    } else {
+       movies = this.props.movies;
+    }
+    return this.state.query !== '' ?  `Found ${movies.length} movies with the query "${this.state.query}"` : "";
   };
 
   render = () => {

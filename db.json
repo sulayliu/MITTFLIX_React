@@ -156,7 +156,7 @@
         878
       ],
       "id": 140607,
-      "my_list": false,
+      "my_list": true,
       "overview": "Thirty years after defeating the Galactic Empire, Han Solo and his allies face a new threat from the evil Kylo Ren and his army of Stormtroopers.",
       "poster_path": "https://image.tmdb.org/t/p/w500/9rd002JS49RwDW944fF1wjU8iTV.jpg",
       "title": "Star Wars: The Force Awakens",
@@ -228,7 +228,7 @@
         878
       ],
       "id": 1771,
-      "my_list": true,
+      "my_list": false,
       "overview": "During World War II, Steve Rogers is a sickly man from Brooklyn who's transformed into super-soldier Captain America to aid in the war effort. Rogers must stop the Red Skull – Adolf Hitler's ruthless head of weaponry, and the leader of an organization that intends to use a mysterious device of untold powers for world domination.",
       "poster_path": "https://image.tmdb.org/t/p/w500/vSNxAJTlD0r02V9sPYpOjqDZXUK.jpg",
       "title": "Captain America: The First Avenger",
@@ -270,7 +270,7 @@
         878
       ],
       "id": 1891,
-      "my_list": true,
+      "my_list": false,
       "overview": "The epic saga continues as Luke Skywalker, in hopes of defeating the evil Galactic Empire, learns the ways of the Jedi from aging master Yoda. But Darth Vader is more determined than ever to capture Luke. Meanwhile, rebel leader Princess Leia, cocky Han Solo, Chewbacca, and droids C-3PO and R2-D2 are thrown into various stages of capture, betrayal and despair.",
       "poster_path": "https://image.tmdb.org/t/p/w500/7BuH8itoSrLExs2YZSsM01Qk2no.jpg",
       "title": "The Empire Strikes Back",
@@ -284,7 +284,7 @@
         878
       ],
       "id": 1892,
-      "my_list": true,
+      "my_list": false,
       "overview": "Luke Skywalker leads a mission to rescue his friend Han Solo from the clutches of Jabba the Hutt, while the Emperor seeks to destroy the Rebellion once and for all with a second dreaded Death Star.",
       "poster_path": "https://image.tmdb.org/t/p/w500/mDCBQNhR6R0PVFucJl0O4Hp5klZ.jpg",
       "title": "Return of the Jedi",
@@ -341,7 +341,7 @@
         14
       ],
       "id": 209112,
-      "my_list": true,
+      "my_list": false,
       "overview": "Fearing the actions of a god-like Super Hero left unchecked, Gotham City’s own formidable, forceful vigilante takes on Metropolis’s most revered, modern-day savior, while the world wrestles with what sort of hero it really needs. And with Batman and Superman at war with one another, a new threat quickly arises, putting mankind in greater danger than it’s ever known before.",
       "poster_path": "https://image.tmdb.org/t/p/w500/5UsK3grJvtQrtzEgqNlDljJW96w.jpg",
       "title": "Batman v Superman: Dawn of Justice",
@@ -355,7 +355,7 @@
         878
       ],
       "id": 24428,
-      "my_list": true,
+      "my_list": false,
       "overview": "When an unexpected enemy emerges and threatens global safety and security, Nick Fury, director of the international peacekeeping agency known as S.H.I.E.L.D., finds himself in need of a team to pull the world back from the brink of disaster. Spanning the globe, a daring recruitment effort begins!",
       "poster_path": "https://image.tmdb.org/t/p/w500/RYMX2wcKCBAr24UyPD7xwmjaTn.jpg",
       "title": "The Avengers",
@@ -412,7 +412,7 @@
         878
       ],
       "id": 284054,
-      "my_list": true,
+      "my_list": false,
       "overview": "King T'Challa returns home from America to the reclusive, technologically advanced African nation of Wakanda to serve as his country's new leader. However, T'Challa soon finds that he is challenged for the throne by factions within his own country as well as without. Using powers reserved to Wakandan kings, T'Challa assumes the Black Panther mantel to join with girlfriend Nakia, the queen-mother, his princess-kid sister, members of the Dora Milaje (the Wakandan 'special forces') and an American secret agent, to prevent Wakanda from being dragged into a world war.",
       "poster_path": "https://image.tmdb.org/t/p/w500/uxzzxijgPIY7slzFvMotPv8wjKA.jpg",
       "title": "Black Panther",
@@ -565,7 +565,7 @@
         878
       ],
       "id": 338762,
-      "my_list": true,
+      "my_list": false,
       "overview": "After he and his wife are murdered, marine Ray Garrison is resurrected by a team of scientists. Enhanced with nanotechnology, he becomes a superhuman, biotech killing machine—'Bloodshot'. As Ray first trains with fellow super-soldiers, he cannot recall anything from his former life. But when his memories flood back and he remembers the man that killed both him and his wife, he breaks out of the facility to get revenge, only to discover that there's more to the conspiracy than he thought.",
       "poster_path": "https://image.tmdb.org/t/p/w500/8WUVHemHFH2ZIP6NWkwlHWsyrEL.jpg",
       "title": "Bloodshot",
@@ -605,7 +605,7 @@
         12
       ],
       "id": 353081,
-      "my_list": true,
+      "my_list": false,
       "overview": "When an IMF mission ends badly, the world is faced with dire consequences. As Ethan Hunt takes it upon himself to fulfill his original briefing, the CIA begin to question his loyalty and his motives. The IMF team find themselves in a race against time, hunted by assassins while trying to prevent a global catastrophe.",
       "poster_path": "https://image.tmdb.org/t/p/w500/AkJQpZp9WoNdj7pLYSj1L0RcMMN.jpg",
       "title": "Mission: Impossible - Fallout",
@@ -618,7 +618,7 @@
         18
       ],
       "id": 359724,
-      "my_list": true,
+      "my_list": false,
       "overview": "American car designer Carroll Shelby and the British-born driver Ken Miles work together to battle corporate interference, the laws of physics, and their own personal demons to build a revolutionary race car for Ford Motor Company and take on the dominating race cars of Enzo Ferrari at the 24 Hours of Le Mans in France in 1966.",
       "poster_path": "https://image.tmdb.org/t/p/w500/6ApDtO7xaWAfPqfi2IARXIzj8QS.jpg",
       "title": "Ford v Ferrari",
